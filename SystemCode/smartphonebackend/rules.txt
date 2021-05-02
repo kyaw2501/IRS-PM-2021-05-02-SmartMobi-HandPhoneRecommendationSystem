@@ -1,0 +1,19 @@
+if price < (int)351 then budget_type = low
+if price > (int)350 then budget_type = medium
+if price > (int)690 then budget_type = high
+if purpose = video then cpu_score = (int)9 and endurance_version = 1
+if purpose = video and budget_type = medium then cpu_score = (int)8 and endurance_version = 1
+if purpose = video and budget_type = low then cpu_score = (int)5 and endurance_version = 1
+if purpose = game then cpu_score = (int)10 and endurance_version = 1
+if purpose = game and budget_type = medium then cpu_score = (int)8 and endurance_version = 1
+if purpose = game and budget_type = low then cpu_score = (int)6 and endurance_version = 1
+if purpose = reading then cpu_score = (int)8 and light_version = 1
+if purpose = reading then budget_type = medium then cpu_score = (int)5 and light_version = 1
+if purpose = reading then budget_type = low then cpu_score = (int)4 and screen_size = 1
+if purpose = reading then budget_type = low then light_version = 1
+if brand = apple then is_apple = 1
+if FastCharge = true then fast_charge = 1
+if Need_5G = true then have_5G = 1
+if screen = large then screen_size = 2
+if screen = medium then screen_size = 1
+if screen = small then screen_size = 0
